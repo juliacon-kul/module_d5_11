@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+</head>
+<body>
+    {% for publisher in publishers %}
+    <ul>
+        <li>
+            Издательство - {{ publisher }}
+            , город - {{ publisher.city }}
+            , страна - {{ publisher.country }}
+            , книга - {{ publisher.book }}
+        </li>
+    </ul>
+    {% endfor %}
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  </body>
+</body>
+</html>
